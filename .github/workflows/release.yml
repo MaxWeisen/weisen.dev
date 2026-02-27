@@ -34,6 +34,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Install Vercel CLI
+        run: pnpm add -g vercel
+
       - name: Create release PR or publish
         uses: changesets/action@v1
         with:
@@ -43,12 +46,10 @@ jobs:
 
       - name: Build
         run: pnpm build
+        env:
+          NITRO_PRESET: vercel
 
-      - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: --prod
-          working-directory: .output
+      - name: Deploy to Production Environment
+        run:
+          vercel deploy --yes --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN
+          }}
