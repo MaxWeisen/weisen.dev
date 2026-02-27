@@ -1,0 +1,52 @@
+seo:
+  title: "Max - Software Engineer"
+  description:
+    "Welcome to my portfolio. I am a Software Engineer based in Southern
+    California. Here you can find more information regarding my experience and
+    personal life."
+title: "Hello, I'm Max"
+description:
+  "I use technology to help build solutions to real world problems. Currently, I
+  am working in the Education Tech space. Creating innovative tools to help
+  students achieve their academic goals."
+hero:
+  links:
+    - label: "Email me"
+      to: mailto:weisenlight@gmail.com
+      color: "neutral"
+  images:
+    - src: https://max-dev-portfolio.s3.us-west-1.amazonaws.com/images/ali-max-italy.jpg
+      alt: Ali & Max in Italy
+    - src: https://max-dev-portfolio.s3.us-west-1.amazonaws.com/images/max-niko-hike.jpg
+      alt: Max & Niko hiking
+    - src: https://max-dev-portfolio.s3.us-west-1.amazonaws.com/images/amaia-max.jpg
+      alt: Max and his niece
+    - src: https://max-dev-portfolio.s3.us-west-1.amazonaws.com/images/family-joe-josts.jpg
+      alt: Family at Joe Jost's
+about:
+  title: "About Me"
+  description: |
+    With 5 years of experience as a Software Engineer, I've learned that great software goes beyond code. 
+    It requires strong communication, thoughtful design, and technical expertise to solve real problems effectively.          
+                                                                                                                                                                                                                                  
+    My BA from California State University, Fullerton provides the foundation I build on with every project.                                                                                                   
+                                                                                                                                                                                                                                    
+    I approach engineering with scalability and maintainability at the forefront, drawing from deep
+    experience across industries and use cases.
+experience:
+  title: Work Experience
+  items:
+    - position: "Sr. Software Engineer"
+      date: "2021 - Present"
+      company:
+        name: Revolution Prep
+        logo: ""
+        url: "https://revolutionprep.com"
+        color: "#f08535"
+    - position: "Software Engineer"
+      date: "2020 - 2021"
+      company:
+        name: Spearmint
+        logo: ""
+        url: "https://github.com/open-source-labs/Spearmint"
+        color: "#049296"

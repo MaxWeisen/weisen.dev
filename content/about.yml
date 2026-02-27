@@ -1,0 +1,59 @@
+title: About Me
+description:
+  Here you can learn more about who I am and my pathway to becoming a software
+  engineer.
+content: |
+  Hello, my name is **Max Weisenberger** and I am currently a Senior Software Engineer at Revolution Prep.
+  I am based out of Long Beach, California. I have been writing code on a daily basis for the past 5 years.
+  My main focus has been in the Education Tech space.
+
+  One of my personal passions is automotive repair. I enjoy balancing the technical side of my life by 
+  being outdoors. My two favorite outdoor activities are snowboarding and camping.
+
+  ### My Engineering Process
+
+  Building great software goes far beyond writing code, it starts with understanding what users 
+  actually *want* and *need*. I begin every project by gathering insights through user interviews, analytics, 
+  and surveys. This foundation shapes everything that follows.                                                                                                                                                                                                                          
+
+  With user stories defined, I collaborate with UI/UX designers in tools like Figma, iterating on                                                                                                                           
+  mockups and refining copy together. This shared design space keeps everyone aligned and moving quickly.                                                                                                                   
+                                                                                                                                                                                                                            
+  In parallel, back-end architecture takes shape. User stories guide decisions around API endpoints                                                                                                                         
+  and database schema, ensuring the technical foundation supports what we're building.                                                                                                                                      
+                                                                                                                                                                                                                            
+  As portions of the design are finalized, I build out the front-end constantly deploying to a test 
+  environment along the way. This lets stakeholders and test users experience the product as it evolves.                                                                                                                 
+                                                                                                                                                                                                                            
+  Once front-end and back-end are integrated, I gather feedback from test users and iterate. When                                                                                                                           
+  we've addressed their concerns, we're ready to ship.                                                                                                                                                             
+                                                                                                                                                                                                                            
+  But launching isn't the finish line. I monitor performance through analytics and real user data,                                                                                                                          
+  continuously iterating on the UI/UX. Delivering real value means treating software as a living product,                                                                                                                   
+  not a one-time deliverable.
+
+  ### My Motivation
+
+  I have always loved building and fixing things. As a child, my friends and I would construct makeshift
+  sheds out of scrap wood, proudly calling them our "clubhouses." In my teenage years, I channeled that
+  same passion into automobiles, performing my own maintenance and repairs, learning how engines work
+  from the ground up. Through it all, I fell in love with the process of learning and mastery itself.
+
+  When I discovered software as an adult, I found that same rewarding process, but with the potential
+  to help far more people. Working in Education Tech has given me the opportunity to help students of
+  all ages achieve their academic goals. It has shown me the incredible impact that teams can create
+  when supported by software that delivers real value.
+
+  ### Outside of Tech
+
+  To balance my life in tech, I spend as much time outdoors as I can. Every year I go camping with a 
+  close group of friends, and living in Southern California gives me easy access to the Angeles 
+  National Forest for hiking and exploring. When winter comes around, you'll find me on the slopes 
+  snowboarding.
+
+  Thanks for taking the time to learn about me. Feel free to browse my [projects](/projects), and if you'd like to connect, [reach out here](mailto:weisenlight@gmail.com).
+images:
+  - src: https://max-dev-portfolio.s3.us-west-1.amazonaws.com/images/max-yosemite.jpg
+    alt: Me in Yosemite
+  - src: https://max-dev-portfolio.s3.us-west-1.amazonaws.com/images/ali-max-wedding.jpg
+    alt: My wedding
