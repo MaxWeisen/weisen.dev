@@ -38,4 +38,4 @@ jobs:
           NITRO_PRESET: vercel
 
       - name: Deploy to Staging Environment
-        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel deploy --yes --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
