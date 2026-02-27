@@ -32,7 +32,7 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Deploy to Vercel
+      - name: Deploy to Staging Environment
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
