@@ -1,6 +1,7 @@
 {
   "name": "weisen.dev",
   "private": true,
+  "version": "1.0",
   "type": "module",
   "scripts": {
     "build": "nuxt build",
@@ -10,7 +11,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "changeset": "changeset",
+    "version": "changeset version"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.68",
@@ -26,6 +29,7 @@
     "nuxt-og-image": "^5.1.11"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.8",
     "@nuxt/eslint": "^1.9.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.36.0",
