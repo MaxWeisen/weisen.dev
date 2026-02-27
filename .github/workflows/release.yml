@@ -41,14 +41,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Pull Vercel environment
+        run: pnpm vercel pull --yes --token=${{ secrets.VERCEL_TOKEN }}
+
       - name: Build
-        run: pnpm build
+        run: pnpm vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Deploy to Production Environment
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: --prod
-          working-directory: .output
+        run: pnpm vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
