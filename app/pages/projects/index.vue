@@ -91,6 +91,7 @@ useSeoMeta({
                   v-for="techKey in project.technologies"
                   :key="techKey"
                   :text="getTechnology(techKey)?.name ?? ''"
+                  :content="{ side: 'right' }"
                   :delay-duration="100"
                 >
                   <UIcon
