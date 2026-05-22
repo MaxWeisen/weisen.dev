@@ -84,13 +84,12 @@ useSeoMeta({
               </span>
               <div
                 v-if="project.technologies?.length"
-                class="flex flex-col items-center gap-1.5 pt-4"
+                class="flex items-center gap-2"
               >
                 <UTooltip
                   v-for="techKey in project.technologies"
                   :key="techKey"
                   :text="getTechnology(techKey)?.name ?? ''"
-                  :content="{ side: 'right' }"
                   :delay-duration="100"
                 >
                   <UIcon
