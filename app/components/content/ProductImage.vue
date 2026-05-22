@@ -1,16 +1,21 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   src: string
   alt: string
-  width?: number
+  width?: number | string
 }>()
+
+const maxWidth = computed(() => {
+  if (props.width === undefined) return '280px'
+  return typeof props.width === 'number' ? `${props.width}px` : props.width
+})
 </script>
 
 <template>
   <img
     :src="src"
     :alt="alt"
-    :style="{ maxWidth: `${width ?? 280}px` }"
+    :style="{ maxWidth }"
     class="product-image"
   >
 </template>
