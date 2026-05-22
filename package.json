@@ -13,7 +13,7 @@
     "format": "prettier --write .",
     "typecheck": "nuxt typecheck",
     "changeset": "changeset",
-    "version": "changeset version"
+    "changeset:version": "changeset version"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.68",
