@@ -11,7 +11,7 @@ if (!page.value) {
 }
 
 const { data: projects } = await useAsyncData('projects', () => {
-  return queryCollection('projects').all()
+  return queryCollection('projects').order('date', 'DESC').all()
 })
 
 const { global } = useAppConfig()
@@ -79,9 +79,27 @@ useSeoMeta({
           }"
         >
           <template #leading>
-            <span class="text-sm text-muted">
-              {{ new Date(project.date).getUTCFullYear() }}
-            </span>
+            <div class="flex items-center justify-between w-100">
+              <span class="text-sm text-muted">
+                {{ new Date(project.date).getUTCFullYear() }}
+              </span>
+              <div
+                v-if="project.technologies?.length"
+                class="flex flex-col items-center gap-1.5 pt-4"
+              >
+                <UTooltip
+                  v-for="techKey in project.technologies"
+                  :key="techKey"
+                  :text="getTechnology(techKey)?.name ?? ''"
+                  :delay-duration="100"
+                >
+                  <UIcon
+                    :name="getTechnology(techKey)?.icon ?? ''"
+                    class="size-6 text-muted"
+                  />
+                </UTooltip>
+              </div>
+            </div>
           </template>
           <template #footer>
             <ULink
@@ -98,7 +116,7 @@ useSeoMeta({
           <img
             :src="project.image"
             :alt="project.title"
-            class="object-cover w-full h-48 rounded-lg"
+            class="object-contain w-full h-48 rounded-lg"
           >
         </UPageCard>
       </Motion>
