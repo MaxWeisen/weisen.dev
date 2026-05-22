@@ -112,11 +112,12 @@ useSeoMeta({
               />
             </ULink>
           </template>
-          <img
+          <ProductImage
             :src="project.image"
             :alt="project.title"
-            class="object-contain w-full h-48 rounded-lg"
-          >
+            max-height="12rem"
+            class="object-contain"
+          />
         </UPageCard>
       </Motion>
     </UPageSection>
