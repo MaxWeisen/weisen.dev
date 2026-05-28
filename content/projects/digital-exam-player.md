@@ -7,7 +7,7 @@ description:
 video: https://max-dev-portfolio.s3.us-west-1.amazonaws.com/projects/revolution-prep/digital-exam-player/exam-player-overview.webm
 url: "/projects/digital-exam-player"
 tags: ["Frontend", "Full Stack", "UX Design"]
-technologies: ["Vue", "Ionic", "Ruby"]
+technologies: ["vue", "ionic", "ruby"]
 date: "2023"
 ---
 
