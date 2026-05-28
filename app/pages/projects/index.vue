@@ -126,7 +126,6 @@ useSeoMeta({
             max-height="12rem"
             class="object-contain"
           />
-          {{ project.video }}!!
         </UPageCard>
       </Motion>
     </UPageSection>
