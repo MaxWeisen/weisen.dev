@@ -22,23 +22,31 @@ const open = ref(false)
 </script>
 
 <template>
-  <img
+  <video
     :src="src"
-    :alt="alt"
+    :aria-label="alt"
     :style="{ maxWidth, maxHeight }"
-    class="product-image"
+    class="product-video"
+    autoplay
+    loop
+    muted
+    playsinline
     @click="open = true"
-  >
+  />
   <MediaLightbox v-model="open">
-    <img
+    <video
       :src="src"
-      :alt="alt"
-    >
+      :aria-label="alt"
+      autoplay
+      loop
+      playsinline
+      controls
+    />
   </MediaLightbox>
 </template>
 
 <style scoped>
-.product-image {
+.product-video {
   width: 100%;
   height: auto;
   display: block;

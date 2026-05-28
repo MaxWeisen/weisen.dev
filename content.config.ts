@@ -92,11 +92,12 @@ export default defineContentConfig({
         title: z.string().nonempty(),
         company: z.string(),
         description: z.string().nonempty(),
-        image: z.string().nonempty().editor({ input: 'media' }),
+        image: z.string().nonempty().editor({ input: 'media' }).optional(),
         url: z.string().nonempty(),
         tags: z.array(z.string()),
         date: z.date(),
-        technologies: z.array(z.string()).optional()
+        technologies: z.array(z.string()).optional(),
+        video: z.string().editor({ input: 'media' }).optional()
       })
     }),
     blog: defineCollection({

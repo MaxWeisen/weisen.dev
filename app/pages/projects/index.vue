@@ -69,7 +69,6 @@ useSeoMeta({
         <UPageCard
           :title="project.title"
           :description="project.description"
-          :to="project.url"
           orientation="horizontal"
           variant="naked"
           :reverse="index % 2 === 1"
@@ -85,7 +84,7 @@ useSeoMeta({
               </span>
               <div
                 v-if="project.technologies?.length"
-                class="flex flex-col items-center gap-1.5 pt-4"
+                class="flex items-center gap-2"
               >
                 <UTooltip
                   v-for="techKey in project.technologies"
@@ -104,7 +103,7 @@ useSeoMeta({
           <template #footer>
             <ULink
               :to="project.url"
-              class="text-sm text-primary flex items-center"
+              class="text-primary flex items-center"
             >
               View Project
               <UIcon
@@ -113,11 +112,20 @@ useSeoMeta({
               />
             </ULink>
           </template>
-          <img
+          <ProductImage
+            v-if="project.image"
             :src="project.image"
             :alt="project.title"
-            class="object-contain w-full h-48 rounded-lg"
-          >
+            max-height="12rem"
+            class="object-contain"
+          />
+          <ProductVideo
+            v-else-if="project.video"
+            :src="project.video"
+            :alt="project.title"
+            max-height="12rem"
+            class="object-contain"
+          />
         </UPageCard>
       </Motion>
     </UPageSection>
