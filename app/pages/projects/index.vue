@@ -113,11 +113,20 @@ useSeoMeta({
             </ULink>
           </template>
           <ProductImage
+            v-if="project.image"
             :src="project.image"
             :alt="project.title"
             max-height="12rem"
             class="object-contain"
           />
+          <ProductVideo
+            v-else-if="project.video"
+            :src="project.video"
+            :alt="project.title"
+            max-height="12rem"
+            class="object-contain"
+          />
+          {{ project.video }}!!
         </UPageCard>
       </Motion>
     </UPageSection>
