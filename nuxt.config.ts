@@ -17,6 +17,21 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  content: {
+    build: {
+      markdown: {
+        rehypePlugins: {
+          'rehype-external-links': {
+            options: {
+              target: '_blank',
+              rel: ['noopener', 'noreferrer']
+            }
+          }
+        }
+      }
+    }
+  },
+
   compatibilityDate: '2024-11-01',
 
   nitro: {
