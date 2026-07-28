@@ -1,5 +1,13 @@
 # weisen.dev
 
+## 1.0.3
+
+### Patch Changes
+
+- 6c3d5b8: feat(project): add AI Score Report
+- 551a620: feat(pages): add resume page and pdf
+- 91c1730: feat(project): add Self-Study
+
 ## 1.0.2
 
 ### Patch Changes
